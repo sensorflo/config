@@ -1,0 +1,23 @@
+[user]
+	name = sensorflo
+	email = sensorflo@gmail.com
+[branch]
+	autosetuprebase = always
+[color]
+  ui = true
+[core]
+  editor = emacs -nw -Q
+[merge]
+  conflictstyle = diff3
+[alias]
+  rbi = rebase --interactive
+  rba = rebase --abort
+  rbc = rebase --continue
+  b = branch
+  bl = branch -vva
+  c = commit
+  f = fetch
+  p = push
+  co = checkout
+[push]
+	default = simple
