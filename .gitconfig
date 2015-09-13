@@ -1,6 +1,9 @@
 [user]
 	name = sensorflo
 	email = sensorflo@gmail.com
+[credential]
+  username = sensorflo
+	helper = cache --timeout=3600
 [branch]
 	autosetuprebase = always
 [color]
@@ -9,12 +12,14 @@
   editor = emacs -nw -Q
 [merge]
   conflictstyle = diff3
+[diff]
+  algorithm = patience
 [alias]
   rbi = rebase --interactive
   rba = rebase --abort
   rbc = rebase --continue
   b = branch
-  bl = branch -vva
+  ba = branch -vva
   c = commit
   f = fetch
   p = push
