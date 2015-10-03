@@ -22,6 +22,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 alias e='emacs -nw -Q'
 alias g='git'
+alias gd='git-git-draw'
 alias sudo='sudo ' #http://askubuntu.com/questions/22037/aliases-not-available-when-using-sudo
 alias s='sudo '
 

@@ -86,4 +86,5 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # enable programmable completion features already done in /etc/bash.bashrc
-
+complete -o default -o nospace -F _git g
+complete -o default -o nospace -F _git gd
