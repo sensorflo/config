@@ -18,11 +18,17 @@
   rbi = rebase --interactive
   rba = rebase --abort
   rbc = rebase --continue
+  m = merge
+  ma = merge --abort	
+  mt = mergetool
+  cp = cherry-pick
   b = branch
   ba = branch -vva
   c = commit
   f = fetch
   p = push
   co = checkout
+  cob = checkout -b
+  st = status
 [push]
 	default = simple
