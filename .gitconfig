@@ -12,8 +12,12 @@
   editor = emacs -nw -Q
 [merge]
   conflictstyle = diff3
+  tool = meld
 [diff]
   algorithm = patience
+[mergetool "meld"]
+  # note that this creates _two_ tabs in meld
+  cmd = meld --diff $LOCAL $MERGED $REMOTE --diff $LOCAL $BASE $REMOTE
 [alias]
   rbi = rebase --interactive
   rba = rebase --abort
