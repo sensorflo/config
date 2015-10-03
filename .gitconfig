@@ -22,17 +22,65 @@
   rbi = rebase --interactive
   rba = rebase --abort
   rbc = rebase --continue
-  m = merge
+	# misc
   ma = merge --abort	
-  mt = mergetool
+  a      = add
   cp = cherry-pick
-  b = branch
-  ba = branch -vva
-  c = commit
-  f = fetch
-  p = push
-  co = checkout
-  cob = checkout -b
-  st = status
+  b      = branch
+  ba     = branch -vva # mine
+  c      = checkout
+  co     = checkout		 # mine
+  cob    = checkout -b # mine
+  d      = diff
+  f      = fetch --prune
+  k      = cherry-pick
+  l      = log --pretty=oneline --abbrev-commit
+  n      = commit --verbose --amend
+  r      = remote
+  s      = commit --dry-run --short
+  t      = diff --cached
+  m      = merge				 # mine
+	ma     = merge --abort # mine
+  mt     = mergetool		 # mine
+  st     = status				 # mine
+
+	# the staging area
+  a      = add
+  aa     = add --update # (mnemonic: "add all")
+  stage  = add
+  ap     = add --patch
+  p      = diff --cached # (mnemonic: "patch")
+  ps     = diff --cached --stat # (mnemonic: "patch stat")
+  unstage= reset HEAD
+
+	# commits and commit history
+  ci     = commit --verbose
+  ca     = commit --verbose --all
+  cam    = commit --verbose --all -m # mine
+  amend  = commit --verbose --amend
+  n      = commit --verbose --amend
+  k      = cherry-pick
+  cp     = cherry-pick # mine
+  re     = rebase --interactive
+  rbi    = rebase --interactive # mine
+  rba    = rebase --abort				# mine
+  rbc    = rebase --continue		# mine
+  pop    = reset --soft HEAD^
+  peek   = log -p --max-count=1
+
+	# fetching and pulling and pushing
+  f      = fetch
+  pm     = pull # (mnemonic: "pull merge")
+  pr     = pull --rebase # (mnemonic: "pull rebase")
+  p      = push
+
+	# misc 2
+  d      = diff
+  ds     = diff --stat #(mnemonic: "diff stat")
+  hard   = reset --hard
+  soft   = reset --soft
+  scrap  = checkout HEAD
+
+
 [push]
 	default = simple
