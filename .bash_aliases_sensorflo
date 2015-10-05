@@ -1,4 +1,6 @@
-# See also /usr/share/doc/bash-doc/examples in the bash-doc package.
+# Intended to be included by .bash_aliasws. See also .profile_sensorflo for
+# more details of the general idea.
+
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then

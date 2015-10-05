@@ -1,0 +1,5 @@
+# The idea is that .profile_sensorflo is sourced by
+# .profile. .profile_sensorflo contains personal stuff applycable on any
+# system, .profile will contain my settings specific to a given system.
+
+PATH="$HOME/bin:$HOME/src:$HOME/.emacs.d/bin:$PATH"

@@ -1,12 +1,5 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
-
-# If not running interactively, don't do anything
-case $- in
-    *i*) ;;
-      *) return;;
-esac
+# Intended to be included by .bash_rc. See also .profile_sensorflo for more
+# details of the general idea.
 
 CLASSPATH=".:/usr/local/lib/antlr-4.2-complete.jar:$CLASSPATH"
 
@@ -78,11 +71,6 @@ esac
 # enable color support of ls
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-fi
-
-# Alias definitions.
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
 fi
 
 # enable programmable completion features already done in /etc/bash.bashrc
