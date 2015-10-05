@@ -16,7 +16,7 @@ if [ -n "$BASH_VERSION" ]; then
   fi
 fi
 
-PATH="$HOME/bin:$HOME/.emacs.d/bin:$PATH"
+PATH="$HOME/bin:$HOME/src:$HOME/.emacs.d/bin:$PATH"
 
 # turn of touch pad on asus zenbook.
 synclient TouchpadOff=0 && synclient TouchpadOff=1
