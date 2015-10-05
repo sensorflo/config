@@ -1,0 +1,7 @@
+original_git=$(which git)
+
+function local_git_git_draw() {
+  "$original_git" "$@" && git-draw -i --hide-reflogs --hide-legend
+}
+
+alias git=local_git_git_draw
