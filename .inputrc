@@ -1,0 +1,7 @@
+# bind -r 'C-w'
+# bind 'C-w: kill-region'
+# bind 'M-w: copy-region-as-kill'
+# bind 'C-u: universal-argument'
+# bind 'C-SPC: set-mark'
+# bind 'C-l: forward-char'
+# bind 'M-l: forward-word'
