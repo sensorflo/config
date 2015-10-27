@@ -1,4 +1,4 @@
-# Intended to be included by .bash_aliasws. See also .profile_sensorflo for
+# Intended to be included by .bash_aliases. See also .profile_sensorflo for
 # more details of the general idea.
 
 
@@ -30,3 +30,4 @@ alias s='sudo '
 
 alias antlr4='java -jar /usr/local/lib/antlr-4.2-complete.jar'
 alias grun='java org.antlr.v4.runtime.misc.TestRig'
+alias sshx='ssh -o ForwardX11=yes'
