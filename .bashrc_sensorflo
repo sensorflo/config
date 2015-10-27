@@ -91,3 +91,10 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+
+# functions
+# --------------------------------------------------
+mkcdir() {
+  mkdir -p -- "$1" && cd -P -- "$1"
+}
