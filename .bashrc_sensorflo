@@ -93,3 +93,7 @@ fi
 mkcdir() {
   mkdir -p -- "$1" && cd -P -- "$1"
 }
+
+# aliases
+# --------------------------------------------------
+. .bash_aliases_sensorflo
