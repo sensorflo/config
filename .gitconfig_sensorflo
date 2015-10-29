@@ -31,13 +31,8 @@
   cmd = meld "$LOCAL" "$REMOTE"
   prompt = false
 [alias]
-  rbi = rebase --interactive
-  rba = rebase --abort
-  rbc = rebase --continue
 	# misc
-  ma = merge --abort	
   a      = add
-  cp = cherry-pick
   b      = branch
   ba     = branch -vva # mine
   c      = checkout
@@ -66,9 +61,9 @@
   unstage= reset HEAD
 
 	# commits and commit history
-  ci     = commit --verbose
-  ca     = commit --verbose --all
-  cam    = commit --verbose --all -m # mine
+  ci     = commit --verbose # commit aka _c_heck_i_n
+  cia    = commit --verbose --all    # mine
+  ciam   = commit --verbose --all -m # mine
   amend  = commit --verbose --amend
   n      = commit --verbose --amend
   k      = cherry-pick
