@@ -68,6 +68,9 @@
   n      = commit --verbose --amend
   k      = cherry-pick
   cp     = cherry-pick # mine
+  cpa    = cherry-pick --abort # mine
+  cpc    = cherry-pick --continue # mine
+  cpq    = cherry-pick --quit # mine
   re     = rebase --interactive
   rbi    = rebase --interactive # mine
   rba    = rebase --abort				# mine
