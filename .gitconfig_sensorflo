@@ -72,6 +72,7 @@
   cpc    = cherry-pick --continue # mine
   cpq    = cherry-pick --quit # mine
   re     = rebase --interactive
+  rb     = rebase --interactive # mine
   rbi    = rebase --interactive # mine
   rba    = rebase --abort				# mine
   rbc    = rebase --continue		# mine
