@@ -101,4 +101,4 @@ mkcdir() {
 
 # aliases
 # --------------------------------------------------
-. .bash_aliases_sensorflo
+. ~/.bash_aliases_sensorflo
