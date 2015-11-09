@@ -62,6 +62,7 @@
 
 	# commits and commit history
 	ci     = commit --verbose # commit aka _c_heck_i_n
+	cim    = commit --verbose -m
 	cia    = commit --verbose --all    # mine
 	ciam   = commit --verbose --all -m # mine
 	amend  = commit --verbose --amend
