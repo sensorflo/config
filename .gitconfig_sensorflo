@@ -15,8 +15,6 @@
 	autosetuprebase = always
 [color]
 	ui = true
-[core]
-	editor = emacs -nw -Q
 [merge]
 	conflictstyle = diff3
 	tool = meld

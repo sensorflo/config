@@ -9,7 +9,7 @@ echo .bashrc_sensorflo
 # Misc
 # --------------------------------------------------
 export PATH="$HOME/src:$HOME/bin:$PATH"
-
+export EDITOR="emacsclient -t --alternate-editor=myeditor"
 
 # shell customization
 # --------------------------------------------------
