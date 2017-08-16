@@ -9,6 +9,8 @@
 #   path = .gitconfig_sensorflo
 # --------------------------------------------------
 
+[core]
+	editor = emacs -nw
 [credential]
 	helper = cache --timeout=3600
 [branch]
@@ -19,15 +21,22 @@
 	conflictstyle = diff3
 	tool = meld
 [mergetool "meld"]
-	cmd = mergetool-wrapper "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+	cmd = mergetool-wrapper meld-wrapper "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
 	trustExitCode = false
 	prompt = false
+	keepBackup = false
+	writeToTemp = true
 [diff]
 	algorithm = patience
 	tool = meld
+	ignoreSubmodules = none
 [difftool "meld"]
 	cmd = meld "$LOCAL" "$REMOTE"
 	prompt = false
+[status]
+	submoduleSummary = true
+[pull]
+	rebase = true
 [alias]
 	# misc
 	a      = add
@@ -71,7 +80,7 @@
 	cpc    = cherry-pick --continue # mine
 	cpq    = cherry-pick --quit # mine
 	re     = rebase --interactive
-	rb     = rebase --interactive # mine
+	rb     = rebase               # mine
 	rbi    = rebase --interactive # mine
 	rba    = rebase --abort				# mine
 	rbc    = rebase --continue		# mine
@@ -83,6 +92,13 @@
 	pm     = pull # (mnemonic: "pull merge")
 	pr     = pull --rebase # (mnemonic: "pull rebase")
 	p      = push
+
+	# submodules
+	sm     = submodule
+	smi    = submodule init
+	smst   = submodule status
+	smsu   = submodule summary
+	smu    = submodule update
 
 	# misc 2
 	d      = diff
